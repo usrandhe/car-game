@@ -5,35 +5,6 @@ const gameOver = document.getElementById('gameOver');
 let score = 0;
 let gameActive = true;
 
-// function moveCar(direction) {
-//   if (!gameActive) return;
-//   let leftPos = parseInt(window.getComputedStyle(car).getPropertyValue('left'));
-//   console.log('leftPos before', leftPos);
-//   if (direction === 'left' && leftPos >= 0 && leftPos >= 65) {
-//     leftPos -= 10;
-//   } else if (direction === 'right' && leftPos >= 0 && leftPos <= 335) {
-//     console.log('leftPos', leftPos);
-//     leftPos += 10;
-//   }
-//   if (leftPos >= 0 && leftPos <= 400 - 30) {
-//     car.style.left = leftPos + 'px';
-//   }
-// }
-// function moveCar(direction) {
-//   if (!gameActive) return;
-//   const carWidth = 30; // Car width
-//   let leftPos = parseInt(window.getComputedStyle(car).getPropertyValue('left'));
-
-//   if (direction === 'left') {
-//     leftPos = Math.max(leftPos - 10, 60); // Ensure the car stays within the left boundary of the road
-//   } else if (direction === 'right') {
-//     let roadWidth = gameContainer.offsetWidth; // Road width
-//     leftPos = Math.min(leftPos + 10, 320 - carWidth); // Ensure the car stays within the right boundary of the road
-//   }
-
-//   car.style.left = leftPos + 'px';
-// }
-
 function moveCar(direction) {
   if (!gameActive) return;
   const carWidth = 30; // Car width
